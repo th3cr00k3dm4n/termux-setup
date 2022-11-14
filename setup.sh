@@ -20,5 +20,4 @@ install_wps(){
     curl -sSf https://raw.githubusercontent.com/drygdryg/OneShot_Termux_installer/master/installer.sh | bash && echo "installed wps pin brute " &&
     echo "alias wps=\"sudo python OneShot/oneshot.py -i wlan0 --iface-down -K\"" >> $HOME/.zshrc && echo "finished" &&  termux-reload-settings ;
 }
-
-tmux_up ;
+tmux_up 
