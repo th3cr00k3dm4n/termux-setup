@@ -21,3 +21,4 @@ install_wps(){
     echo "alias wps=\"sudo python OneShot/oneshot.py -i wlan0 --iface-down -K\"" >> $HOME/.zshrc && echo "finished" &&  termux-reload-settings ;
 }
 
+tmux_up ;
