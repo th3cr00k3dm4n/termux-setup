@@ -5,7 +5,7 @@
 #UPDATE
 tmux_up() {
     apt update -y && apt upgrade -yy && pkg i root-repo && 
-    pkg i git curl zsh tsu python wpa-supplicant pixiewps iw openssl -y && install_omz ; || echo "failed" && exit; 
+    pkg i git curl zsh tsu python wpa-supplicant pixiewps iw openssl -y && install_omz ; 
 }
 #INSTALLING OH MY ZSH 
 install_omz(){
