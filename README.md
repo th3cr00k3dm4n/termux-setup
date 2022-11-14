@@ -2,4 +2,4 @@
 termux-setup
 
 
- sh -c "$(curl -fsSL https://raw.githubusercontent.com/th3cr00k3dm4n/termux-setup/main/setup.sh)"
+ curl -sSf https://raw.githubusercontent.com/th3cr00k3dm4n/termux-setup/master/setup.sh && chmod +x setup.sh && ./setup.sh
