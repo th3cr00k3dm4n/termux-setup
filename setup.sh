@@ -1,11 +1,11 @@
 #!/bin/bash
 #script for  settting up termux
-FOO='alias wps="sudo python OneShot/oneshot.py -i wlan0 --iface-down -K"'
+FOO='alias wps="sudo python tools/OneShot/oneshot.py -i wlan0 --iface-down -K"'
 
 tmux_up() 
    {
     apt update -y && apt upgrade -yy && pkg i root-repo &&            
-    pkg i git curl zsh tsu python wpa-supplicant pixiewps iw openssl neofetch -y && omz ;  
+    pkg i git curl zsh tsu python wpa-supplicant pixiewps iw openssl neofetch python -y && clear && echo "installing yt-dlp" && python3 -m pip install yt-dlp && omz ;  
     }
 #INSTALLING OH MY ZSH                
 
