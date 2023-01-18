@@ -1,7 +1,5 @@
 #!/bin/bash
 #script for  settting up termux
-FOO='alias ls="ls -al"'
-DWN='alias dwn="cd storage/downloads"'
 tmux_up() 
    {
     apt update -y && apt upgrade -yy && pkg i root-repo &&            
@@ -9,7 +7,11 @@ tmux_up()
     }
     
  tmux_up
- echo $FOO>> $HOME/.zshrc ;
- echo $DWN>> $HOME/.zshrc ;
- 
+ clear
+ sleep 0.5
+ echo "+-+-+-+-+-+-+-+-+-+"
+ echo  "+ installing zsh  +"
+ echo "+-+-+-+-+-+-+-+-+-+"
+ cd "$HOME" || exit 
+ curl -fsSL https://raw.githubusercontent.com/th3cr00k3dm4n/termux-setup/master/.zshrc >> .zshrc
  
