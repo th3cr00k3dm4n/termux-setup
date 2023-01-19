@@ -14,4 +14,12 @@ tmux_up()
  echo "+-+-+-+-+-+-+-+-+-+"
  cd "$HOME" || exit 
  curl -fsSL https://raw.githubusercontent.com/th3cr00k3dm4n/termux-setup/master/.zshrc >> .zshrc
- 
+ chsh -s zsh
+ sleep 0.3
+ rm ../usr/etc/motd
+ clear
+ sleep 0.3
+ echo "+-+-+-+-+-+-+-+-+-+"
+ echo "+ Finished Install +"
+ echo "+-+-+-+-+-+-+-+-+-+"
+ exit
