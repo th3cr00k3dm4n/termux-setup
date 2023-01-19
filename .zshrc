@@ -15,3 +15,5 @@ _comp_options+=(globdots)		# Include hidden files.
 
 alias ls="ls -al"
 alias dwn="cd storage/downloads"
+
+neofetch
