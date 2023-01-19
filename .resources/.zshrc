@@ -2,7 +2,7 @@
 
 autoload -U colors && colors
 
-PS1="%B%{$fg[blue]%}→%{$reset_color%}%b "
+PS1="%B%{$fg[blue]%}%~%{$fg[blue]%}⟩⟩%{$reset_color%}%b "
 
 # Basic auto/tab complete:
 autoload -U compinit
