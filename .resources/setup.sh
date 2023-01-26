@@ -9,6 +9,12 @@
  echo "*+ Installing fonts and properties +*"
  ( curl -fsSL https://raw.githubusercontent.com/th3cr00k3dm4n/termux-setup/main/.resources/font.ttf >> $HOME/.termux/font.ttf && curl -fsSL https://raw.githubusercontent.com/th3cr00k3dm4n/termux-setup/main/.resources/termux.properties >> $HOME/.termux/termux.properties ) | pv -l > /dev/null
  sleep 0.3
+
+
+
+
+
+ sleep 0.3
  termux-reload-settings
  echo "+-+-+-+-+-+-+-+-+-+"
  echo "+ Finished Install +"
