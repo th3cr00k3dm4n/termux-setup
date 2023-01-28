@@ -12,7 +12,7 @@
  curl -fsSL https://raw.githubusercontent.com/th3cr00k3dm4n/termux-setup/main/.resources/font.ttf >> "$HOME"/.termux/font.ttf 
  curl -fsSL https://raw.githubusercontent.com/th3cr00k3dm4n/termux-setup/main/.resources/termux.properties >> "$HOME"/.termux/termux.properties 
  sleep 0.3
- ( svn export https://github.com/th3cr00k3dm4n/termux-setup/trunk/.resources/zsh-syntax-highlighting .zsh/zsh-syntax-highlighting ) | pv -l > /dev/null
+ ( svn export https://github.com/th3cr00k3dm4n/termux-setup/trunk/.resources/.zsh .zsh ) | pv -l > /dev/null
  sleep 0.3
  termux-reload-settings
  echo "+-+-+-+-+-+-+-+-+-+"
