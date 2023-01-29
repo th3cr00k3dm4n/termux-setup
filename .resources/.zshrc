@@ -19,5 +19,5 @@ alias ls="ls -al"
 alias dwn="cd storage/downloads"
 
 neofetch
-source ~/.zsh/zsh-syntax-highlighting.plugin.zsh
-source ~/.zsh/zsh-autosuggestions.plugin.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
