@@ -16,7 +16,7 @@ _comp_options+=(globdots)		# Include hidden files.
 
 #alias
 alias ls="ls -al"
-alias dwn="cd storage/downloads"
+alias dwn="cd ~/storage/downloads"
 
 neofetch
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
