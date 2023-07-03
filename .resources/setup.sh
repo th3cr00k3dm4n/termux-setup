@@ -16,14 +16,12 @@ install_zsh(){
     rm ../usr/etc/motd 
 	svn export https://github.com/th3cr00k3dm4n/termux-setup/trunk/.resources/.zsh .zsh
 	sleep 0.3
-	clear
 	chsh -s zsh
 	}
 
 install_ytd(){
 	echo "installing yt-dlp"
 	sleep 0.5
-	clear 
 	python3 -m pip install yt-dlp
 	sleep 0.5 
 	}
@@ -40,7 +38,17 @@ banner(){
  apt update -y && apt upgrade -y 
  clear
  sleep 0.5
- pkg i  openssh subversion micro git curl zsh wget openssl neofetch python ffmpeg figlet lolcat-y  
+ pkg install openssh -y
+ pkg install subversion -y
+ pkg install micro -y
+ pkg install git curl -y
+ pkg install zsh -y
+ pkg install wget  -y
+ pkg install openssl -y 
+ pkg install neofetch  -y 
+ pkg install python -y
+ pkg install ffmpeg -y 
+ pkg install figlet lolcat -y  
  banner
  termux-setup-storage
  sleep 0.5
